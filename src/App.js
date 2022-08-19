@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import EditTemplate from "./Components/EditTemplate";
+import NavBar from "./Components/NavBar";
+import Templates from "./Components/Templates";
 
 function App() {
+
+  const [selectedTemplateId,setSelectedTemplateId] = useState(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Templates setId={setSelectedTemplateId} />
+      <EditTemplate id={selectedTemplateId} setId={setSelectedTemplateId}/>
     </div>
   );
 }
