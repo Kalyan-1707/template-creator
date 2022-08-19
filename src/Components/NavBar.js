@@ -22,24 +22,9 @@ export default function NavBar() {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item active">
                 <a className="nav-link" href="#">
-                  Home <span className="sr-only">(current)</span>
+                  My templates
                 </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Features
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" href="#">
-                  Disabled
-                </a>
-              </li>
+             </li>
             </ul>
           </div>
         </div>
